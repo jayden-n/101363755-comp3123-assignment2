@@ -18,7 +18,11 @@ mongoose.connect(
 
 const port = 8000;
 
-server.use(cors()); // Enable CORS for all routes
+server.use(
+	cors({
+		origin: ["http://localhost:8000"],
+	}),
+); // Enable CORS for all routes
 server.use(express.json());
 server.use(routes);
 
