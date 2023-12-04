@@ -63,7 +63,7 @@ function EmployeeCrud() {
 					phone: phone,
 				},
 			);
-			alert("Registration Updateddddd");
+			alert("Employee Updated Successfully !!!");
 			setId("");
 			setName("");
 			setAddress("");

@@ -21,7 +21,7 @@ const updateUserController = async (req, res) => {
 	const result = await userService.updateUserDBService(req.params.id, req.body);
 
 	if (result) {
-		res.send({ status: true, message: "User Updateeeedddddd" });
+		res.send({ status: true, message: "User Updated Successfully !!!" });
 	} else {
 		res.send({ status: false, message: "User Updateeeedddddd Faileddddddd" });
 	}
